@@ -1,18 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testtesttest</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webstudio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
 </head>
 <body>
+<div class="wrap">
+    <div class="red">1</div>
+    <div class="green animate__bounce">2</div>
+    <div class="blu">3</div>
+</div>
 
-    <header> Интернет магазин Мандаринка </header>
-
-    <nav>
-        <img src="./images/ef_masla.jpg" alt="фото масел" width="750">
-
-    </nav>
     
+<div class="wrap-img">
+    <img src="./images/ef_masla.jpg" width="310 px" height="300 px" alt="">
+<p class="overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus maxime repudiandae in, itaque voluptatem laborum perspiciatis quam maiores a voluptate nam obcaecati libero,
+     eum numquam esse autem eligendi soluta vitae?</p>
+    
+    </div>
+<button class="open-btn" type="button" data-modal-open>place order</button>
+    
+        <form action="#" class="modal-forma">
+            <input name="user-name" type="text" placeholder="Enter your name*" minlength="2" required>
+            <input name="user-phone" type="tel" placeholder="Enter your phone*" required>
+            <input name="user-mail" type="email" placeholder="Enter your e-mail*" required>
+            <div>
+                <button type="submit">send</button>
+                <button type="reset">clear all</button>
+            </div> 
+            <section class="age">
+                <h3>You age</h3>
+                <label for="20-age">20</label>
+                <input id="20-age" name="user-age" type="radio" value="20"> 
+                30
+                <input name="user-age" type="radio" value="30">
+                40
+                <input name="user-age" type="radio" value="40">
+                
+                <h3>your hobby</h3>
+                football
+                <input name="user-hobby" type="checkbox" value="football">
+                ball
+                <input name="user-hobby" type="checkbox" value="ball">
+                foot
+                <input name="user-hobby" type="checkbox" value="foot">
+           
+            </section>
+            <textarea name="user-messege" class="user-mess"></textarea>
+            <h3>your town</h3>
+            <select>
+                <option>kiev</option>
+                <option>lvov</option>
+                <option>odessa</option>
+                <option>uman</option>
+                <option>dnepr</option>
+            </select>
+            <footer>
+                <ul>
+                    <li>0988406963</li>
+                    <li>yuliya.gordienko@ukr.net</li>
+                </ul>
+        </form> 
+     </footer>  
+     
+     
+     <div class="backdrop is-hidden" data-modal>
+     <div class="modal">
+         <button type="button" class="btn" data-modal-close>X</button>
+        <strong>Оставьте свои данные, мы вам перезвоним</strong>
+        
+        </div>
+     </div>
+       
+
+    <script src="./js/modal.js"></script> 
 </body>
 </html>
